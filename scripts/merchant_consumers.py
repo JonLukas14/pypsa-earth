@@ -123,7 +123,7 @@ def add_merchant_consumers(n, electricity_buses, btc=None, h2=None):
 
             metadata = {
                 attr: n.buses.at[bus, attr]
-                for attr in ("location", "x", "y")
+                for attr in ("x", "y")
                 if attr in n.buses.columns
             }
 
